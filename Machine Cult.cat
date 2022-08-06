@@ -2,261 +2,9 @@
 <catalogue id="fbe7-131a-a7dc-f472" name="Machine Cult" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="4503-fc13-8f5b-fe41" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="8508-4a0a-46d8-8de4" name="GFF - Machine Cult v2.11" shortName="Machine Cult"/>
+    <publication id="6479-d19f-d0aa-3bd9" name="GFF - Machine Cult v2.50"/>
   </publications>
   <selectionEntries>
-    <selectionEntry id="ea3b-41e9-72b5-3718" name="Machine Priest" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="52d8-c823-4a46-4d81" name="Machine Priest" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="4cec-3002-fcbd-3a7b" typeName="Model">
-          <characteristics>
-            <characteristic name="Qua" typeId="2dfa-8c3f-24e8-6738">3+</characteristic>
-            <characteristic name="Def" typeId="ddc6-a4bf-a141-512a">2+</characteristic>
-            <characteristic name="Special Rules" typeId="7d77-0c3d-eaf7-d32f">Hero, Regenration, Tough(3)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="c201-4098-cd95-b117" name="Hero" hidden="false" targetId="7bad-6b36-671a-646b" type="rule"/>
-        <infoLink id="b872-256b-48ef-54ff" name="Regeneration" hidden="false" targetId="2abf-b372-3762-e643" type="rule"/>
-        <infoLink id="2fc1-6b78-f89c-6a86" name="Tough(X)" hidden="false" targetId="292a-f3ac-32a6-9a43" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="2a54-e525-e398-a957" name="New CategoryLink" hidden="false" targetId="731f-ae78-a24f-043d" primary="true"/>
-        <categoryLink id="42a9-4ee0-afe4-27be" name="Machine Cult" hidden="false" targetId="c906-f240-e44f-6bc3" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8dc9-1148-3e41-9dfe" name="Upgrade Psychic(1)" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a7f-e91d-7cc9-8744" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <selectionEntries>
-            <selectionEntry id="e12c-a148-dbf2-f458" name="Psychic(2)" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8cf-992b-2fc9-14c9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6542-2d95-0fcf-8ead" name="Psychic(2)" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="05b2-52f7-7285-c005" typeName="Special Rules">
-                  <characteristics>
-                    <characteristic name="Description" typeId="44d3-9a99-f749-fd99">Psychic(2)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="15.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="5c08-db2f-157c-c9b7" name="Upgrade with any:" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="f483-23c5-53b4-1bcc" name="Repair Master" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3754-546e-892f-8b7e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="dbe9-cd65-8895-5ae7" name="Repair Master" hidden="false" targetId="7804-4c68-1ad0-49cd" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="02d4-4e5d-72b7-724b" name="Machine Lore" hidden="false" collective="false" import="true" targetId="0a7f-e91d-7cc9-8744" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d74a-a0e6-bc5b-1486" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="8de3-443c-1937-a1a1" name="Upgrade with one:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d5d-44b1-e608-01d2" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ffa9-5b18-bdd4-1d5b" name="P-Carbine" hidden="false" collective="false" import="true" targetId="f170-b8d6-780a-e1b9" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b86b-a089-8f1a-3fdc" name="Macro Pistol" hidden="false" collective="false" import="true" targetId="b2a8-f8f3-fcbc-c3c5" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7215-4682-debb-b09e" name="Upgrade with one:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f9-b57a-5c93-28df" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2f44-7223-8287-2dcb" name="Rail Gun" hidden="false" collective="false" import="true" targetId="b038-df8e-70d7-e0e2" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0323-16a0-7f7c-f99c" name="Trans Cannon" hidden="false" collective="false" import="true" targetId="ce63-c6e0-8881-e4fc" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="00ac-4ec6-156c-5ecb" name="Death Ray" hidden="false" collective="false" import="true" targetId="ef25-05d8-f13d-ac4b" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="1a8e-0777-91ba-7d55" name="Combustion Blaster" hidden="false" collective="false" import="true" targetId="3854-50d9-5068-4fd4" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="dbd8-45c2-bb2f-e2ed" name="Upgrade with:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2607-8bfa-14c5-a6e9" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="f090-9365-951e-5754" name="Canticles" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" targetId="bccc-ae47-e0fa-aef0" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="de83-2f85-72b8-d540" name="Axe-Halberd" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" targetId="2d3d-d1d9-72c7-db1e" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="741f-768e-4990-1708" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d538-3a29-ae87-6a6c" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="1549-06c1-4685-757e" value="95.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3b26-fd9b-e4cf-4152" name="Machine Deacon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="ab69-5561-0cfb-821d" name="Machine Deacon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="4cec-3002-fcbd-3a7b" typeName="Model">
-          <characteristics>
-            <characteristic name="Qua" typeId="2dfa-8c3f-24e8-6738">3+</characteristic>
-            <characteristic name="Def" typeId="ddc6-a4bf-a141-512a">4+</characteristic>
-            <characteristic name="Special Rules" typeId="7d77-0c3d-eaf7-d32f">Hero, Tough(3)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2329-1b39-8979-ad72" name="Hero" hidden="false" targetId="7bad-6b36-671a-646b" type="rule"/>
-        <infoLink id="8302-8304-eb5a-7e5b" name="Tough(X)" hidden="false" targetId="292a-f3ac-32a6-9a43" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="a647-15a3-6807-3185" name="New CategoryLink" hidden="false" targetId="731f-ae78-a24f-043d" primary="true"/>
-        <categoryLink id="85f2-60bc-796b-9083" name="Machine Cult" hidden="false" targetId="c906-f240-e44f-6bc3" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="76e5-12d7-8935-9447" name="Upgrade with one:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e6-a8de-80c9-2266" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="cfe4-3249-313f-c9e8" name="Rail Gun" hidden="false" collective="false" import="true" targetId="b038-df8e-70d7-e0e2" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6b6d-633e-32f9-22ba" name="Trans Cannon" hidden="false" collective="false" import="true" targetId="ce63-c6e0-8881-e4fc" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="9ae1-5990-52fe-aeae" name="Death Ray" hidden="false" collective="false" import="true" targetId="ef25-05d8-f13d-ac4b" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="64f3-f917-ab26-f648" name="Combustion Blaster" hidden="false" collective="false" import="true" targetId="3854-50d9-5068-4fd4" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ffe0-9b17-9198-a501" name="Upgrade with one:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a6-270c-5b67-9294" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="bc4f-cbfe-9ce9-c1a6" name="P-Carbine" hidden="false" collective="false" import="true" targetId="f170-b8d6-780a-e1b9" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="00bf-c0dc-1791-a652" name="Macro Pistol" hidden="false" collective="false" import="true" targetId="b2a8-f8f3-fcbc-c3c5" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="be58-9f16-c0d6-bcba" name="Upgrade with any:" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="3327-87d7-831e-bd6a" name="Repair Master" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e5b-bbd8-ce29-a6e8" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="beda-eea2-1a8c-c16a" name="Repair Master" hidden="false" targetId="7804-4c68-1ad0-49cd" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="39e5-6b57-677e-3d3a" name="Machine Lore" hidden="false" collective="false" import="true" targetId="0a7f-e91d-7cc9-8744" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="310e-520c-e2c6-a802" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7d23-205f-59f0-baf5" name="Upgrade with:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e9d-a058-31a0-30b7" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="81c8-e73f-94ca-1113" name="Canticles" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" targetId="bccc-ae47-e0fa-aef0" type="selectionEntry">
-              <costs>
-                <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="27fc-87f2-1f53-d061" name="Axe-Halberd" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" targetId="2d3d-d1d9-72c7-db1e" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b587-4d4b-6592-9471" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d1a-98c2-7729-32d0" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="1549-06c1-4685-757e" value="50.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="fbc5-201b-3265-e605" name="Cult Alpha" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="1044-d45b-c622-3f9d" name="Cult Alpha" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="4cec-3002-fcbd-3a7b" typeName="Model">
@@ -325,6 +73,9 @@
               <infoLinks>
                 <infoLink id="4d3f-6361-645a-bf4d" name="CCW A1" hidden="false" targetId="da05-748e-15c0-4fe3" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3406-552a-5fc3-efec" name="CCW A2" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -337,6 +88,9 @@
               <infoLinks>
                 <infoLink id="a3f7-85a9-71c2-65d9" name="CCW A2" hidden="false" targetId="ee57-ca2b-b67f-4932" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -563,11 +317,17 @@
               <infoLinks>
                 <infoLink id="d67b-56d3-5f6d-e124" name="CCW A1" hidden="false" targetId="da05-748e-15c0-4fe3" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7fda-8159-f0a9-7318" name="CCW A2" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="8e8c-a470-fec6-7123" name="CCW A2" hidden="false" targetId="ee57-ca2b-b67f-4932" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -648,11 +408,17 @@
               <infoLinks>
                 <infoLink id="004e-d3a3-3807-f6f6" name="CCW A1" hidden="false" targetId="da05-748e-15c0-4fe3" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5409-15f1-4a42-531b" name="CCW A2" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="f42d-d735-d5de-507e" name="CCW A2" hidden="false" targetId="ee57-ca2b-b67f-4932" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -910,6 +676,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9e19-90af-ce63-4ccd" name="Burst Carbine and Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -1005,6 +774,9 @@
               <infoLinks>
                 <infoLink id="671d-0f03-f4d2-2970" name="CCW A2" hidden="false" targetId="ee57-ca2b-b67f-4932" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -1083,6 +855,9 @@
               <infoLinks>
                 <infoLink id="a37a-3120-0b9a-88e2" name="CCW A1" hidden="false" targetId="da05-748e-15c0-4fe3" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -1263,6 +1038,110 @@
         <cost name="pts" typeId="1549-06c1-4685-757e" value="85.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="55fe-a204-526f-f3cd" name="High Priest" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8287-0ea5-db34-8abc" name="High Priest" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="4cec-3002-fcbd-3a7b" typeName="Model">
+          <characteristics>
+            <characteristic name="Qua" typeId="2dfa-8c3f-24e8-6738">3+</characteristic>
+            <characteristic name="Def" typeId="ddc6-a4bf-a141-512a">3+</characteristic>
+            <characteristic name="Special Rules" typeId="7d77-0c3d-eaf7-d32f">Hero, Regeneration, Tough(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2569-fb66-901b-7fa1" name="Hero" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" targetId="7bad-6b36-671a-646b" type="rule"/>
+        <infoLink id="0160-f3e6-8583-0098" name="Regeneration" hidden="false" targetId="2abf-b372-3762-e643" type="rule"/>
+        <infoLink id="585c-da20-407e-ede9" name="Tough(X)" hidden="false" targetId="292a-f3ac-32a6-9a43" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7d2c-1e67-c6c0-2ef4" name="Machine Cult" hidden="false" targetId="c906-f240-e44f-6bc3" primary="false"/>
+        <categoryLink id="aa20-53aa-ee23-927a" name="New CategoryLink" hidden="false" targetId="731f-ae78-a24f-043d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="712b-32ed-04a8-81c9" name="Upgrade with one:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cba-5484-2f88-cb48" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5e52-fbf4-13a0-fe09" name="Eradicator" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" targetId="7640-da48-8688-1f6c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d855-3e59-57f1-ab3f" name="Trans Cannon" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" targetId="ce63-c6e0-8881-e4fc" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="fb60-6e94-397f-e19d" name="Rail Gun" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" targetId="b038-df8e-70d7-e0e2" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="20d0-6617-26e1-5f23" name="V-Blaster" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" targetId="2851-88d0-03bb-9feb" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="88a7-0062-7184-612b" name="Upgrade with one:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecfd-1e37-6c36-169d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="be13-c7cf-cd23-03c1" name="Macro Pistol" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" targetId="b2a8-f8f3-fcbc-c3c5" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ae7b-cb8f-84e0-a10d" name="P-Carbine" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" targetId="f170-b8d6-780a-e1b9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c990-7013-356e-4223" name="Upgrade with one:" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba80-5928-d75e-a719" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2552-4a6e-49a6-8c8c" name="Machine Lore(Psychic(1))" hidden="false" collective="false" import="true" targetId="0a7f-e91d-7cc9-8744" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="803d-6412-a2e5-d950" name="Preacher(Canticles)" hidden="false" collective="false" import="true" targetId="bccc-ae47-e0fa-aef0" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="507a-4e98-631d-21e1" name="Engineer (Repair)" hidden="false" collective="false" import="true" targetId="3291-27a1-b1c9-11fd" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1473-19c9-88b0-48c0" name="Deacon (Psalms)" hidden="false" collective="false" import="true" targetId="8560-563e-4a7f-d2fe" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a725-5e53-595d-7703" name="Axe-Halberd" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" targetId="2d3d-d1d9-72c7-db1e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f26-2193-d88c-1fee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c184-ccc1-c1d5-64c7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="80.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="8fd7-116f-8840-b876" name="Contortion Cannon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
@@ -1279,6 +1158,9 @@
       <infoLinks>
         <infoLink id="32cd-fbe0-83e2-001a" name="Deadly(X)" hidden="false" targetId="7cc5-4f66-8ace-337c" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="adf9-cb95-f3d6-f24a" name="Cyborg Claws" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1291,6 +1173,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="694b-e978-4ee0-2d2c" name="EMP Cannon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1306,6 +1191,9 @@
       <infoLinks>
         <infoLink id="f3b4-04ca-0d02-b00b" name="EMP" hidden="false" targetId="bb08-f57f-d976-d481" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="663a-0f08-f78b-afd8" name="Heavy EMP Cannon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1322,6 +1210,9 @@
         <infoLink id="bf98-6a51-9edd-231a" name="EMP" hidden="false" targetId="bb08-f57f-d976-d481" type="rule"/>
         <infoLink id="1b08-e3d8-2b2d-cf8a" name="Deadly(X)" hidden="false" targetId="7cc5-4f66-8ace-337c" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b118-5687-dbd5-2070" name="Iron Claws" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1334,6 +1225,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2e6e-51b7-b832-e8fc" name="EMP Claws" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1349,6 +1243,9 @@
       <infoLinks>
         <infoLink id="1e4e-d0e8-0724-2fb7" name="EMP" hidden="false" targetId="bb08-f57f-d976-d481" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c24f-b1a3-3c28-553e" name="Mini Plasma Cannon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1364,6 +1261,9 @@
       <infoLinks>
         <infoLink id="8357-f997-14aa-1a9e" name="Blast(X)" hidden="false" targetId="cb22-6c8a-4dc6-3d39" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6a03-9fe0-2043-0578" name="P-Rifle" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1379,6 +1279,9 @@
       <infoLinks>
         <infoLink id="f0c2-7449-4e39-997c" name="Phosphor" hidden="false" targetId="841f-ffcc-fccb-3a9f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b850-f6c4-d042-9736" name="Flamethrower" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1391,6 +1294,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1cba-37dc-72da-a12c" name="Heavy Gravity Cannon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1406,8 +1312,11 @@
       <infoLinks>
         <infoLink id="69c2-ee4a-ec2f-190d" name="Rending" hidden="false" targetId="7375-4ce4-7768-0acf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="bccc-ae47-e0fa-aef0" name="Canticles" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bccc-ae47-e0fa-aef0" name="Preacher(Canticles)" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0311-af06-4d85-065f" name="Canticles" hidden="false" targetId="d8a2-9ada-fb12-8284" type="rule"/>
       </infoLinks>
@@ -1420,12 +1329,15 @@
         <profile id="3607-bf53-4aa4-4047" name="Axe-Halberd" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">Melee</characteristic>
-            <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">4</characteristic>
-            <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">2</characteristic>
+            <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">3</characteristic>
+            <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">4</characteristic>
             <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7a88-09b3-ea7a-a5da" name="R-Carbine" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1441,6 +1353,9 @@
       <infoLinks>
         <infoLink id="ede0-9508-78b6-6b1f" name="Radiation" hidden="false" targetId="0c06-ba99-40a6-e970" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9e8a-f209-36b1-5d12" name="Sonic Razor &amp; Claw" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1457,6 +1372,9 @@
         <infoLink id="29a1-94b4-dd20-25f1" name="Poison" hidden="false" targetId="a7c5-0443-a3b4-79bf" type="rule"/>
         <infoLink id="6d38-455a-72e2-a658" name="Rending" hidden="false" targetId="7375-4ce4-7768-0acf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d8c4-1c93-42ce-6d0f" name="Rifle" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1469,6 +1387,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c03d-8a90-4ed8-401e" name="Shock Staff" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1481,6 +1402,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ff73-d6cd-9f58-9825" name="Blaster SMG" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1493,6 +1417,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="341d-c066-d40b-b288" name="Taser Sword" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1508,6 +1435,9 @@
       <infoLinks>
         <infoLink id="f261-8415-f973-ac09" name="Taser" hidden="false" targetId="8451-819d-2660-875e" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="df27-187d-aaac-74de" name="P-Thrower" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1523,6 +1453,9 @@
       <infoLinks>
         <infoLink id="fe15-d8b7-dab8-4816" name="Phosphor" hidden="false" targetId="841f-ffcc-fccb-3a9f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9497-8dfc-7fc8-3b37" name="2x P-Pistols" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1535,6 +1468,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b038-df8e-70d7-e0e2" name="Rail Gun" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1550,6 +1486,9 @@
       <infoLinks>
         <infoLink id="48f9-bdd9-14e0-1a99" name="Deadly(X)" hidden="false" targetId="7cc5-4f66-8ace-337c" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ce63-c6e0-8881-e4fc" name="Trans Cannon" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1562,6 +1501,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ef25-05d8-f13d-ac4b" name="Death Ray" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1577,6 +1519,9 @@
       <infoLinks>
         <infoLink id="0598-b29a-925a-1c18" name="Blast(X)" hidden="false" targetId="cb22-6c8a-4dc6-3d39" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3854-50d9-5068-4fd4" name="Combustion Blaster" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1589,6 +1534,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f170-b8d6-780a-e1b9" name="P-Carbine" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1604,6 +1552,9 @@
       <infoLinks>
         <infoLink id="b065-adba-d1a7-795d" name="Phosphor" hidden="false" targetId="841f-ffcc-fccb-3a9f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b2a8-f8f3-fcbc-c3c5" name="Macro Pistol" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1616,8 +1567,11 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="0a7f-e91d-7cc9-8744" name="Machine Lore" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0a7f-e91d-7cc9-8744" name="Machine Lore(Psychic(1))" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="82c0-fd60-b738-185e" name="Machine Lore" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="05b2-52f7-7285-c005" typeName="Special Rules">
           <characteristics>
@@ -1629,7 +1583,7 @@
         <infoLink id="de06-21a9-b128-042b" name="Psychic Spells" hidden="false" targetId="8480-c6ce-447c-a185" type="infoGroup"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="1549-06c1-4685-757e" value="20.0"/>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9d89-c309-5ed1-b7ea" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1643,6 +1597,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9955-5fcb-d35c-418f" name="P-Pistol" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1658,6 +1615,9 @@
       <infoLinks>
         <infoLink id="8274-a9d3-46b8-0956" name="Phosphor" hidden="false" targetId="841f-ffcc-fccb-3a9f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f53e-0ac7-cdb8-ed34" name="R-Pistol" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1673,6 +1633,9 @@
       <infoLinks>
         <infoLink id="8fe7-2874-9237-8b81" name="Radiation" hidden="false" targetId="0c06-ba99-40a6-e970" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="fa79-bae0-166c-1c88" name="Energy Sword" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1688,6 +1651,9 @@
       <infoLinks>
         <infoLink id="2a67-3c0a-756c-a1ee" name="Rending" hidden="false" targetId="7375-4ce4-7768-0acf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9c5f-737b-40d0-df34" name="EMP Sword" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1703,6 +1669,9 @@
       <infoLinks>
         <infoLink id="1094-ebb9-c0d2-2b86" name="EMP" hidden="false" targetId="bb08-f57f-d976-d481" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9a00-1234-4189-f9df" name="2x Sonic Blades" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1718,6 +1687,9 @@
       <infoLinks>
         <infoLink id="25f8-f972-3670-143f" name="Rending" hidden="false" targetId="7375-4ce4-7768-0acf" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d760-c87e-a41a-3fbc" name="Burst Carbine" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1730,6 +1702,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e169-b004-e684-542d" name="Metal Spike" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1745,6 +1720,9 @@
       <infoLinks>
         <infoLink id="db5d-ec89-7d9b-43f3" name="EMP" hidden="false" targetId="bb08-f57f-d976-d481" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b36a-97f9-0d8d-49ee" name="EMP Rifle" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1757,6 +1735,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e2b7-287a-c4fa-6a23" name="Plasma Burst Carbine" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1769,6 +1750,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f508-4874-53c4-5aca" name="Heavy EMP Rifle" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1785,6 +1769,9 @@
         <infoLink id="6825-b2d0-ced0-fb6f" name="EMP" hidden="false" targetId="bb08-f57f-d976-d481" type="rule"/>
         <infoLink id="babc-6b88-ca3c-c86b" name="Deadly(X)" hidden="false" targetId="7cc5-4f66-8ace-337c" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7536-c145-140d-848d" name="Uranium Rifle" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1800,6 +1787,9 @@
       <infoLinks>
         <infoLink id="c95f-c180-ba5e-906a" name="Sniper" hidden="false" targetId="e6f5-22cf-0866-8cef" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b623-4172-7887-6464" name="Taser Gauntlets" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1815,6 +1805,9 @@
       <infoLinks>
         <infoLink id="e577-f96f-eaf7-bd3c" name="Taser" hidden="false" targetId="8451-819d-2660-875e" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4961-3a7c-b803-2d9e" name="Gauntlet Shocks" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1830,6 +1823,9 @@
       <infoLinks>
         <infoLink id="419f-93d0-a232-0ea4" name="Taser" hidden="false" targetId="8451-819d-2660-875e" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="879c-e118-4049-da79" name="Blaster Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1842,6 +1838,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1cf7-bbcc-56d2-98f1" name="Cluster Grenades" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1857,6 +1856,9 @@
       <infoLinks>
         <infoLink id="3429-69a4-ca08-9b47" name="Impact(X)" hidden="false" targetId="0763-1d57-b1ec-5d9f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f107-a073-1257-acab" name="Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1869,6 +1871,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1367-2d2b-a70d-173e" name="P-Blaster Carbine" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1881,6 +1886,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1db5-3e2a-0203-f3e3" name="Revolver" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1893,6 +1901,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="be0d-b373-4a19-72f9" name="Raider Sabre" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1905,6 +1916,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="901c-9f60-0e9b-28c2" name="P-Blaster Pistol" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1917,6 +1931,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bfc6-481a-a8a2-80ee" name="P-Breath" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1929,6 +1946,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="010f-9d38-2849-4855" name="EMP Pistol" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1944,15 +1964,66 @@
       <infoLinks>
         <infoLink id="74f4-82b9-1cae-8ff1" name="EMP" hidden="false" targetId="bb08-f57f-d976-d481" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7640-da48-8688-1f6c" name="Eradicator" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a36a-1364-6ae2-363d" name="Eradicator" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">24&quot;</characteristic>
+            <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">1</characteristic>
+            <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">1</characteristic>
+            <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">Blast(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c049-3b1d-96b7-1a6f" name="Blast(X)" hidden="false" targetId="cb22-6c8a-4dc6-3d39" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2851-88d0-03bb-9feb" name="V-Blaster" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2c4b-26be-950e-10b2" name="V-Blaster" hidden="false" typeId="2c92-291a-eece-3203" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="e3ae-f1ee-0a4c-a9ba">24&quot;</characteristic>
+            <characteristic name="Attacks" typeId="ce99-74fb-fca1-48df">3</characteristic>
+            <characteristic name="AP" typeId="0b3e-ea4d-51df-81f1">-</characteristic>
+            <characteristic name="Special Rules" typeId="6636-8baa-4920-3db5">Rending</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4ab0-131f-425d-1815" name="Rending" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" targetId="7375-4ce4-7768-0acf" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3291-27a1-b1c9-11fd" name="Engineer (Repair)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="de08-e805-2921-5651" name="Repair" hidden="false" targetId="7804-4c68-1ad0-49cd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8560-563e-4a7f-d2fe" name="Deacon (Psalms)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5429-0ca8-a715-0107" name="Psalms" hidden="false" targetId="010a-e8fd-7c28-421e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="1549-06c1-4685-757e" value="30.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="d8a2-9ada-fb12-8284" name="Canticles" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false">
-      <description>When the hero is activated pick one of the following canticles, and the hero and all friendly models within 12” get one of these special rules until the end of the round:
-	• Incantation: +3” when moving
-	• Benediction: AP(+1) when shooting
-	• Invocation: AP(+1) when in melee
-	• Psalm: enemies get -1 to melee hits</description>
+    <rule id="d8a2-9ada-fb12-8284" name="Canticles" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false">
+      <description>This model and all friendly units within 12” get AP(+1) when shooting.</description>
     </rule>
     <rule id="bb08-f57f-d976-d481" name="EMP" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false">
       <description>This weapon counts as having Rending but only needs rolls of 5-6 to take effect.</description>
@@ -1963,11 +2034,17 @@
     <rule id="0c06-ba99-40a6-e970" name="Radiation" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false">
       <description>Enemies that roll to block hits from this weapon take one additional wound for each unmodified result of 1 that they roll.</description>
     </rule>
-    <rule id="7804-4c68-1ad0-49cd" name="Repair Master" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false">
-      <description>Once per turn, if within 2&quot; of a unit with Tough, roll one die. On a 2+ you may repair 3 wounds from the  target.</description>
+    <rule id="7804-4c68-1ad0-49cd" name="Repair" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false">
+      <description>Once per activation, if within 2” of a unit with Tough, roll one die. On a 2+ you may repair D3 wounds from the target.</description>
     </rule>
     <rule id="8451-819d-2660-875e" name="Taser" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false">
       <description>For each unmodified result of 6 you roll to hit that hit is multiplied by 4.</description>
+    </rule>
+    <rule id="010a-e8fd-7c28-421e" name="Psalms" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false">
+      <description>This model and all friendly units within 12” move +2” on Advance and +4” on Rush/Charge.</description>
+    </rule>
+    <rule id="c646-d57e-06bf-304a" name="Cluster Grenades" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false">
+      <description>Whenever this model moves over enemy units, pick one of them and roll one die, on a 2+ it takes 1 hit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1997,34 +2074,34 @@
   <sharedInfoGroups>
     <infoGroup id="8480-c6ce-447c-a185" name="Psychic Spells" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false">
       <profiles>
-        <profile id="33ae-1871-dedc-e502" name="(4+) Lock-On" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
+        <profile id="33ae-1871-dedc-e502" name="(4+) Lock-On" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
           <characteristics>
-            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target friendly unit within 12&quot; gets AP(+1) next time it shoots.</characteristic>
+            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target 2 friendly units within 6”get AP(+1) next time they shoot.</characteristic>
           </characteristics>
         </profile>
-        <profile id="7cca-230a-c3be-961e" name="(4+) Solar Beam" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
+        <profile id="7cca-230a-c3be-961e" name="(4+) Solar Beam" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
           <characteristics>
-            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target enemy model within 12&quot; takes 1 automatic hit with AP(2).</characteristic>
+            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target enemy model within12” takes 1 hit with AP(4).</characteristic>
           </characteristics>
         </profile>
-        <profile id="4ed6-ec8c-77fc-f8e3" name="(5+) Steel Body" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
+        <profile id="4ed6-ec8c-77fc-f8e3" name="(5+) Steel Body" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
           <characteristics>
-            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target friendly unit within 12&quot; may heal 1 wound or restore 1 model (with only 1 health left if it had Tough.)</characteristic>
+            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target 2 friendly units within12” get +1 to defense next time they take hits.</characteristic>
           </characteristics>
         </profile>
-        <profile id="3259-088a-cb01-354d" name="(5+) Shrapnel" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
+        <profile id="3259-088a-cb01-354d" name="(5+) Shrapnel" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
           <characteristics>
-            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target 2 enemy units within 6&quot; take 3 automatic hitswith AP(2) each.</characteristic>
+            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target 2 enemy units within 6”take 4 hits with AP(1) each.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2a1a-e247-2dc7-dcf5" name="(6+) Corroded Metal" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
+        <profile id="2a1a-e247-2dc7-dcf5" name="(6+) Corroded Metal" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
           <characteristics>
-            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target enemy unit within 12&quot; gets -2 to defense next time it takes hits.</characteristic>
+            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target 2 enemy unitswithin 12” get -2 to hit next time they shoot.</characteristic>
           </characteristics>
         </profile>
-        <profile id="4fba-b3b1-ca90-795f" name="(6+) Machine Terror" publicationId="8508-4a0a-46d8-8de4" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
+        <profile id="4fba-b3b1-ca90-795f" name="(6+) Machine Terror" publicationId="6479-d19f-d0aa-3bd9" page="2" hidden="false" typeId="0680-6f78-f88c-15fe" typeName="Psychic Spell">
           <characteristics>
-            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target enemy unit within 12&quot; takes 8 automatic hits.</characteristic>
+            <characteristic name="Psychic Spell" typeId="34ee-63f1-d514-1028">Target 2 enemy unitswithin 6” take 8 hits each.</characteristic>
           </characteristics>
         </profile>
       </profiles>
